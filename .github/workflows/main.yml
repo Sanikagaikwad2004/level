@@ -1,0 +1,13 @@
+name: Simple CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-iatest
+    steps:
+      - name: Get Code 
+        uses: action/checkout@v3
+
+      - name: Run Test
+        run: echo "Code cheked successfully"
